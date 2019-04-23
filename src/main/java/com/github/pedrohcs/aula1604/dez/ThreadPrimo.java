@@ -1,9 +1,14 @@
-package com.github.pedrohcs.aula0804.exercicio1;
+package com.github.pedrohcs.aula1604.dez;
 
-public class ThreadB implements Runnable {
+public class ThreadPrimo implements Runnable{
     private int quantNumsPrimos = 0;
-    private int numInicial = 90_000_000;
-    private int numFinal = 120_000_000;
+    private int numInicial;
+    private int numFinal;
+
+    public ThreadPrimo(int numInicial, int numFinal){
+        this.numInicial = numInicial;
+        this.numFinal = numFinal;
+    }
 
     @Override
     public void run() {
@@ -26,3 +31,4 @@ public class ThreadB implements Runnable {
         return true;
     }
 }
+

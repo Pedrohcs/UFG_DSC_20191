@@ -1,4 +1,4 @@
-package com.github.pedrohcs.aula0804.exercicio1;
+package com.github.pedrohcs.aula1604.duas;
 
 public class ThreadB implements Runnable {
     private int quantNumsPrimos = 0;

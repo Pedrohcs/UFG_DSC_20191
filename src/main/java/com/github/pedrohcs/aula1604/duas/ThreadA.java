@@ -1,9 +1,10 @@
-package com.github.pedrohcs.aula0804.exercicio1;
+package com.github.pedrohcs.aula1604.duas;
 
-public class ThreadB implements Runnable {
+public class ThreadA implements Runnable {
+
     private int quantNumsPrimos = 0;
-    private int numInicial = 90_000_000;
-    private int numFinal = 120_000_000;
+    private int numInicial = 1_000_000;
+    private int numFinal = 30_000_000;
 
     @Override
     public void run() {

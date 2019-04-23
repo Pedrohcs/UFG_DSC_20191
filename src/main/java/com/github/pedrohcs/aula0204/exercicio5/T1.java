@@ -11,7 +11,7 @@ public class T1 implements Runnable{
     @Override
     public void run(){
         while(loop) {
-            System.out.println(String.format("Thread %d executando", this.numeroIdentificação));
+            System.out.println(String.format("ThreadPrimo %d executando", this.numeroIdentificação));
         }
     }
 }
