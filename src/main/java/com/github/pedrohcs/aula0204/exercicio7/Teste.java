@@ -1,11 +1,11 @@
 package com.github.pedrohcs.aula0204.exercicio7;
 
-public class Thread implements Runnable{
+public class Teste implements Runnable{
 
     private int[] numeros;
     private int soma;
 
-    public Thread(int[] numeros){
+    public Teste(int[] numeros){
         this.numeros = numeros;
     }
 

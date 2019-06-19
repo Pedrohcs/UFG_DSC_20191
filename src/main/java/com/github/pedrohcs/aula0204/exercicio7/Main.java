@@ -16,7 +16,7 @@ public class Main {
 
         int[][] matrix = new int[colunas][linhas];
         java.lang.Thread[] thread = new java.lang.Thread[colunas];
-        Thread[] thread7 = new Thread[colunas];
+        Teste[] thread7 = new Teste[colunas];
 
         tempoInicial = System.currentTimeMillis();
 
@@ -29,7 +29,7 @@ public class Main {
         int contador, soma = 0;
 
         for (contador = 0; contador < colunas; contador ++){
-            Thread tRun = new Thread(matrix[contador]);
+            Teste tRun = new Teste(matrix[contador]);
             thread7[contador] = tRun;
             thread[contador] = new java.lang.Thread(tRun);
             thread[contador].start();
@@ -43,7 +43,7 @@ public class Main {
             }
         }
 
-        for(Thread t : thread7){
+        for(Teste t : thread7){
             soma += t.getSoma();
         }
 

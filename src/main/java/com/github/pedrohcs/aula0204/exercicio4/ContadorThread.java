@@ -1,9 +1,9 @@
 package com.github.pedrohcs.aula0204.exercicio4;
 
-public class Thread implements Runnable{
+public class ContadorThread implements Runnable{
     private int numeroIdentificacao;
 
-    public Thread(int num){
+    public ContadorThread(int num){
         this.numeroIdentificacao = num;
     }
 

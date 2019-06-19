@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class PistaCorridaSapo {
 
-    final static int QUANTIDADE_SAPOS = 2;
+    final static int QUANTIDADE_SAPOS = 5;
     final static int DISTANCIA_CORRIDA = 2000;
     final static String[] NOMES_SAPOS = {
             "Alfredo", "Geremias", "Antonieta", "Marcinhho", "Rogerinho", "Claudinho"
