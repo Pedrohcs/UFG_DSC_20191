@@ -69,7 +69,7 @@ public class SearchIp implements Runnable{
         return -1; // para indicar erro
     }
 
-    private ArrayList<String> getValidIps(){
+    public ArrayList<String> getValidIps(){
         Collections.sort(this.validIps);
         return this.validIps;
     }
@@ -77,10 +77,15 @@ public class SearchIp implements Runnable{
     @Override
     public void run() {
         this.calculateIpBegin();
-        int cont = 1;
-        while(cont <= this.end){
+        String ip = Integer.toString(this.ip[0]) + "." + Integer.toString(this.ip[1]) +
+                "." + Integer.toString(this.ip[2]) + "." + Integer.toString(this.ip[3]);
+        if(this.estaAcessivel(ip) != -1){
+            this.validIps.add(ip);
+        }
+        int cont = this.begin;
+        while(cont < this.end ){
             addIp();
-            String ip = Integer.toString(this.ip[0]) + "." + Integer.toString(this.ip[1]) +
+            ip = Integer.toString(this.ip[0]) + "." + Integer.toString(this.ip[1]) +
                     "." + Integer.toString(this.ip[2]) + "." + Integer.toString(this.ip[3]);
             if(this.estaAcessivel(ip) != -1){
                 this.validIps.add(ip);
